@@ -9,7 +9,7 @@
 ]]
 
 # Exercise exercise_06_vector_add
-add_sycl_executable(Data_Parallelism source)
+# add_sycl_executable(Data_Parallelism source)
 if(SYCL_ACADEMY_ENABLE_SOLUTIONS)
   add_sycl_executable(Data_Parallelism solution)
 endif()

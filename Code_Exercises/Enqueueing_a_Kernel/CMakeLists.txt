@@ -9,7 +9,7 @@
 ]]
 
 # Exercise exercise_02_hello_world
-add_sycl_executable(Enqueueing_a_Kernel source)
+# add_sycl_executable(Enqueueing_a_Kernel source)
 if(SYCL_ACADEMY_ENABLE_SOLUTIONS)
   add_sycl_executable(Enqueueing_a_Kernel solution)
 endif()

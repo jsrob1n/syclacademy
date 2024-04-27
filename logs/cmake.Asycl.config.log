@@ -1,0 +1,41 @@
+Preset CMake variables:
+
+  CMAKE_CXX_COMPILER="acpp"
+  CUDA_DIR="/usr/local/cuda"
+  SYCL_ACADEMY_ENABLE_SOLUTIONS:BOOL="ON"
+  SYCL_ACADEMY_INSTALL_ROOT="/opt/intel/oneapi"
+  SYCL_ACADEMY_USE_ADAPTIVECPP:BOOL="ON"
+  SYCL_ARCH="sm_89"
+  SYCL_TRIPLE="nvptx64-nvidia-cuda"
+
+Preset environment variables:
+
+  MY_ENVIRONMENT_VARIABLE="Test"
+  PATH="/home/jsrobin/ninja/bin:/home/jsrobin/opt/hashcat/v6.2.6/bin:/opt/intel/oneapi/vtune/2024.1/bin64:/opt/intel/oneapi/mpi/2021.12/bin:/opt/intel/oneapi/mkl/2024.1/bin/:/opt/intel/oneapi/dpcpp-ct/2024.1/bin:/opt/intel/oneapi/dev-utilities/2024.1/bin:/opt/intel/oneapi/debugger/2024.1/opt/debugger/bin:/opt/intel/oneapi/compiler/2024.1/opt/oclfpga/bin:/opt/intel/oneapi/compiler/2024.1/bin:/opt/intel/oneapi/advisor/2024.1/bin64:/usr/local/acpp/20240415/bin:/usr/lib/llvm-18/bin:/usr/local/cuda/bin:/home/jsrobin/miniconda3/bin:/home/jsrobin/miniconda3/condabin:/home/jsrobin/gems/bin:/home/jsrobin/bin:/usr/local/go/bin:/home/jsrobin/opt/bin:/usr/lib/jvm/adoptium-17-jdk-hotspot/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jsrobin/go/bin"
+
+-- The C compiler identification is GNU 12.3.0
+-- The CXX compiler identification is Clang 18.1.3
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-12 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/local/acpp/20240415/bin/acpp - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Configuring done (2.1s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CUDA_DIR
+    SYCL_ARCH
+    SYCL_TRIPLE
+
+
+-- Build files have been written to: /home/jsrobin/git/codeplaysoftware/syclacademy/build/Asycl

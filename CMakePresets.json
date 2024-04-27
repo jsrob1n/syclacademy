@@ -1,0 +1,105 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 23,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "Isycl",
+            "displayName": "icpx UXL",
+            "description": "Intel SYCL Compiler",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "icx",
+                "CMAKE_CXX_COMPILER": "icpx",
+                "CUDA_DIR": "/usr/local/cuda",
+                "SYCL_TRIPLE": "nvptx64-nvidia-cuda",
+                "SYCL_ARCH": "sm_89",
+                "SYCL_ACADEMY_USE_DPCPP": {
+                    "type": "BOOL",
+                    "value": "ON"
+                },
+                "SYCL_ACADEMY_ENABLE_SOLUTIONS": {
+                    "type": "BOOL",
+                    "value": "ON"
+                },
+                "SYCL_ACADEMY_INSTALL_ROOT": "/opt/intel/oneapi"
+            },
+            "environment": {
+                "MY_ENVIRONMENT_VARIABLE": "Test",
+                "PATH": "$env{HOME}/ninja/bin:$penv{PATH}"
+            }
+        },
+        {
+            "name": "Asycl",
+            "displayName": "acpp UXL",
+            "description": "AdaptiveCpp SYCL Compiler",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_CXX_COMPILER": "acpp",
+                "CUDA_DIR": "/usr/local/cuda",
+                "SYCL_TRIPLE": "nvptx64-nvidia-cuda",
+                "SYCL_ARCH": "sm_89",
+                "SYCL_ACADEMY_USE_ADAPTIVECPP": {
+                    "type": "BOOL",
+                    "value": "ON"
+                },
+                "SYCL_ACADEMY_ENABLE_SOLUTIONS": {
+                    "type": "BOOL",
+                    "value": "ON"
+                },
+                "SYCL_ACADEMY_INSTALL_ROOT": "/opt/intel/oneapi"
+            },
+            "environment": {
+                "MY_ENVIRONMENT_VARIABLE": "Test",
+                "PATH": "$env{HOME}/ninja/bin:$penv{PATH}"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "Isycl",
+            "configurePreset": "Isycl",
+            "nativeToolOptions": [
+                "-v",
+                "-k 0"
+            ]
+        },
+        {
+            "name": "Asycl",
+            "configurePreset": "Asycl",
+            "nativeToolOptions": [
+                "-v",
+                "-k 0"
+            ]
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "Isycl",
+            "configurePreset": "Isycl",
+            "output": {
+                "outputOnFailure": true
+            },
+            "execution": {
+                "noTestsAction": "error",
+                "stopOnFailure": true
+            }
+        },
+        {
+            "name": "Asycl",
+            "configurePreset": "Asycl",
+            "output": {
+                "outputOnFailure": true
+            },
+            "execution": {
+                "noTestsAction": "error",
+                "stopOnFailure": true
+            }
+        }
+    ]
+}

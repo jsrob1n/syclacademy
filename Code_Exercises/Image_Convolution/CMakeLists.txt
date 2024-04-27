@@ -9,4 +9,4 @@
 ]]
 
 # Exercise exercise_15_image_convolution
-add_sycl_executable(Image_Convolution reference)
+# add_sycl_executable(Image_Convolution reference)

@@ -9,7 +9,7 @@
 ]]
 
 # Exercise exercise_12_temporary_data
-add_sycl_executable(Advanced_Data_Flow source)
+# add_sycl_executable(Advanced_Data_Flow source)
 if(SYCL_ACADEMY_ENABLE_SOLUTIONS)
   add_sycl_executable(Advanced_Data_Flow solution)
 endif()

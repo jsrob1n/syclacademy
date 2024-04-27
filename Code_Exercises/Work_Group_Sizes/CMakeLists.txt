@@ -9,7 +9,7 @@
 ]]
 
 # Exercise exercise_19_work_group_sizes
-add_sycl_executable(Work_Group_Sizes source)
+# add_sycl_executable(Work_Group_Sizes source)
 if(SYCL_ACADEMY_ENABLE_SOLUTIONS)
   add_sycl_executable(Work_Group_Sizes solution)
 endif()

@@ -9,7 +9,7 @@
 ]]
 
 # Exercise exercise_07_usm_selector
-add_sycl_executable(Introduction_to_USM source)
+# add_sycl_executable(Introduction_to_USM source)
 if(SYCL_ACADEMY_ENABLE_SOLUTIONS)
   add_sycl_executable(Introduction_to_USM solution)
 endif()

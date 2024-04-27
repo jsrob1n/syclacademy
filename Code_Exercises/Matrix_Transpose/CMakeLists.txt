@@ -8,7 +8,7 @@
   see <http://creativecommons.org/licenses/by-sa/4.0/>.
 ]]
 
-add_sycl_executable(Matrix_Transpose source)
+# add_sycl_executable(Matrix_Transpose source)
 if(SYCL_ACADEMY_ENABLE_SOLUTIONS)
   add_sycl_executable(Matrix_Transpose solution)
 endif()

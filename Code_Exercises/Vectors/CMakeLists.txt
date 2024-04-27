@@ -9,7 +9,7 @@
 ]]
 
 # Exercise exercise_17_vectors
-add_sycl_executable(Vectors source)
+# add_sycl_executable(Vectors source)
 if(SYCL_ACADEMY_ENABLE_SOLUTIONS)
   add_sycl_executable(Vectors solution)
 endif()

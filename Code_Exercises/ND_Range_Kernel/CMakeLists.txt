@@ -9,7 +9,7 @@
 ]]
 
 # Exercise exercise_14_nd_range_kernel
-add_sycl_executable(ND_Range_Kernel source)
+# add_sycl_executable(ND_Range_Kernel source)
 if(SYCL_ACADEMY_ENABLE_SOLUTIONS)
   add_sycl_executable(ND_Range_Kernel solution)
 endif()

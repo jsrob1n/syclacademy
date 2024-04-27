@@ -9,7 +9,7 @@
 ]]
 
 # Exercise exercise_18_local_memory_tiling
-add_sycl_executable(Local_Memory_Tiling source)
+# add_sycl_executable(Local_Memory_Tiling source)
 if(SYCL_ACADEMY_ENABLE_SOLUTIONS)
   add_sycl_executable(Local_Memory_Tiling solution)
 endif()
